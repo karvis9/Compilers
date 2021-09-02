@@ -1,0 +1,31 @@
+decl
+int a,b;
+int g(int n);
+enddecl
+
+int g(int n)
+{
+	decl
+	int c;
+	enddecl
+
+	begin
+	if(n==0) then c=1;
+	else c=n*g(n-1);
+	endif;
+	return c;
+	end
+}
+
+int main()
+{
+	decl
+	int abc;
+	enddecl
+	
+	begin
+	read(abc);
+	write(g(abc));
+	return 0;
+	end
+}

@@ -1,0 +1,45 @@
+VISHAL2:
+PUSH BP
+MOV BP, SP
+MOV R0, 1
+MOV R1, SP
+ADD R0, R1
+MOV SP, R0
+MOV R0, BP
+MOV R1, -4
+ADD R1, R0
+MOV R1, [R1]
+MOV R0, [R1]
+MOV R1, BP
+MOV R2, 1
+ADD R1, R2
+MOV [R1], R0
+MOV R0, BP
+MOV R1, -3
+ADD R1, R0
+MOV R1, [R1]
+MOV R0, [R1]
+MOV R1, BP
+MOV R2, -4
+ADD R1, R2
+MOV R1, [R1]
+MOV [R1], R0
+MOV R0, BP
+MOV R1, 1
+ADD R1, R0
+MOV R0, [R1]
+MOV R1, BP
+MOV R2, -3
+ADD R1, R2
+MOV R1, [R1]
+MOV [R1], R0
+MOV R0,1
+MOV R1, -2
+MOV R2, BP
+ADD R1, R2,
+MOV [R1], R0
+MOV SP, BP
+POP BP
+RET
+Function swap cadadalled with wrong argument list
+ line no 30
